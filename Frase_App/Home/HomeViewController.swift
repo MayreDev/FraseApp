@@ -13,17 +13,24 @@ import FirebaseFirestoreSwift
 
 class HomeViewController: UIViewController {
     
+    @IBOutlet weak var tableViewFrases: UITableView!
     @IBOutlet weak var nameUserLabel: UILabel!
     
     let database = Firestore.firestore()
     let loginUser = Auth.auth().currentUser
+    var dataFrases: [FrasesModel] = []
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    
         getDataUser()
+        getFrases()
+        
+        tableViewFrases.dataSource = self
+        tableViewFrases.register(UINib(nibName: "CellFrasesTableViewCell", bundle: nil), forCellReuseIdentifier: "CellFrasesTableViewCell")
+        tableViewFrases.delegate = self
 
-     
     }
     
     
@@ -37,12 +44,80 @@ class HomeViewController: UIViewController {
              
                     self.nameUserLabel.text = nameUser
                 }
-                
-               
             }
+    }
+
+    
+  
+    
+    
+    func getFrases(){
+        database.collection("frases").getDocuments { result, error in
+            if !(result?.documents.isEmpty)!{
+            
+                do{
+                    let frasesList: [QueryDocumentSnapshot] = result!.documents
+                    
+                    for frase in frasesList {
+                        var guardData = try frase.data(as: FrasesModel.self)
+                        
+                        self.dataFrases.append(guardData)
+
+                    }
+                    
+                    self.tableViewFrases.reloadData()
+                }catch{
+                    print(error)
+                }
+             
+            }
+        }
+        
+    }
+    
+    
+    var selecteFrate: FrasesModel?
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "Show-Frase"{
+            
+            if let showFraseVC = segue.destination as? ShowFraseViewController{
+                let dataShowFrases = self.selecteFrate
+                
+                showFraseVC.fraseSelect = dataShowFrases
+                
+                
+                
+            }
+        }
+        
+        
         
         
     }
-
-
+    
+    
+    
 }
+
+extension HomeViewController: UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return dataFrases.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CellFrasesTableViewCell", for: indexPath)
+        (cell as? CellFrasesTableViewCell)?.setupCell(frase: dataFrases[indexPath.row])
+        return cell
+    }
+}
+
+extension HomeViewController: UITableViewDelegate{
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("La frase #\(indexPath.row) fue seleccionada.")
+        selecteFrate = dataFrases[indexPath.row]
+       
+        self.performSegue(withIdentifier: "Show-Frase", sender: self)
+    }
+}
+
