@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="407" id="KGk-i7-Jjw" customClass="CellFrasesTableViewCell" customModule="Frase_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="709" height="407"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="709" height="407"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iR4-XM-jXt">
+                        <rect key="frame" x="10" y="10" width="689" height="68"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Captura de Pantalla 2022-11-05 a la(s) 12.19.19" translatesAutoresizingMaskIntoConstraints="NO" id="hB1-HU-Qag">
+                                <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="9bM-sO-NFK"/>
+                                    <constraint firstAttribute="width" constant="200" id="ljD-Tw-JP0"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="tpe-wT-xlV">
+                                <rect key="frame" x="205" y="5" width="479" height="58"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KDQ-EU-2Gj">
+                                        <rect key="frame" x="0.0" y="0.0" width="479" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="zge-vU-nGg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8n-UD-wAZ">
+                                        <rect key="frame" x="0.0" y="34" width="479" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="e8n-UD-wAZ" firstAttribute="top" secondItem="KDQ-EU-2Gj" secondAttribute="bottom" constant="10" id="knq-UY-sxF"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="tpe-wT-xlV" secondAttribute="trailing" constant="5" id="IHE-o6-Q4l"/>
+                            <constraint firstItem="tpe-wT-xlV" firstAttribute="leading" secondItem="hB1-HU-Qag" secondAttribute="trailing" constant="5" id="Wao-qo-nLr"/>
+                            <constraint firstItem="tpe-wT-xlV" firstAttribute="top" secondItem="iR4-XM-jXt" secondAttribute="top" constant="5" id="dbf-R9-cTa"/>
+                            <constraint firstAttribute="bottom" secondItem="tpe-wT-xlV" secondAttribute="bottom" constant="5" id="qPn-y9-8Ls"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" red="0.819141372742479" green="0.82260619878589303" blue="0.83300067691613511" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="iR4-XM-jXt" secondAttribute="trailing" constant="10" id="4AI-DY-QXk"/>
+                    <constraint firstItem="iR4-XM-jXt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="7Rh-ND-2NP"/>
+                    <constraint firstItem="iR4-XM-jXt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Tlb-vg-1de"/>
+                    <constraint firstAttribute="bottom" secondItem="iR4-XM-jXt" secondAttribute="bottom" constant="10" id="t1k-gV-gfJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="descriptionFraseLabel" destination="e8n-UD-wAZ" id="8X7-MW-tuq"/>
+                <outlet property="imageFrase" destination="hB1-HU-Qag" id="slc-Gj-rOQ"/>
+                <outlet property="titleFraseLabel" destination="KDQ-EU-2Gj" id="w3o-qh-bZT"/>
+            </connections>
+            <point key="canvasLocation" x="234.35114503816794" y="84.154929577464799"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Captura de Pantalla 2022-11-05 a la(s) 12.19.19" width="256" height="381.5"/>
+    </resources>
+</document>
