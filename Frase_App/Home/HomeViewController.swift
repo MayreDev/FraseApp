@@ -25,12 +25,18 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
     
         getDataUser()
-        getFrases()
         
         tableViewFrases.dataSource = self
         tableViewFrases.register(UINib(nibName: "CellFrasesTableViewCell", bundle: nil), forCellReuseIdentifier: "CellFrasesTableViewCell")
         tableViewFrases.delegate = self
 
+    }
+    // hacer que la vista se recargue
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        getFrases()
+        
+        
     }
     
     
@@ -52,6 +58,7 @@ class HomeViewController: UIViewController {
     
     
     func getFrases(){
+        dataFrases = []
         database.collection("frases").getDocuments { result, error in
             if !(result?.documents.isEmpty)!{
             
