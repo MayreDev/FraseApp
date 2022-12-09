@@ -22,6 +22,7 @@
 		C6377404293EDDEE00F3B532 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = C6377403293EDDEE00F3B532 /* FirebaseAuth */; };
 		C637740E293EF03800F3B532 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C637740D293EF03800F3B532 /* Home.storyboard */; };
 		C6377410293EF04E00F3B532 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C637740F293EF04E00F3B532 /* HomeViewController.swift */; };
+		C68A8F0C2942C88700B420A4 /* CreateFraseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68A8F0B2942C88700B420A4 /* CreateFraseViewController.swift */; };
 		C6BD5BF1293FCC090031F32B /* ValidationUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BD5BF0293FCC090031F32B /* ValidationUtils.swift */; };
 		C6BD5BF4293FFE8D0031F32B /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = C6BD5BF3293FFE8D0031F32B /* FirebaseFirestore */; };
 		C6BD5BF6293FFE8D0031F32B /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C6BD5BF5293FFE8D0031F32B /* FirebaseFirestoreSwift */; };
@@ -48,6 +49,7 @@
 		C63773F9293EC05D00F3B532 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C637740D293EF03800F3B532 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		C637740F293EF04E00F3B532 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C68A8F0B2942C88700B420A4 /* CreateFraseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateFraseViewController.swift; sourceTree = "<group>"; };
 		C6BD5BF0293FCC090031F32B /* ValidationUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationUtils.swift; sourceTree = "<group>"; };
 		C6BD5BF82940085A0031F32B /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		C6BD5BFC294110030031F32B /* CellFrasesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellFrasesTableViewCell.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				C637740D293EF03800F3B532 /* Home.storyboard */,
 				C637740F293EF04E00F3B532 /* HomeViewController.swift */,
 				C6BD5C05294177F70031F32B /* ShowFraseViewController.swift */,
+				C68A8F0B2942C88700B420A4 /* CreateFraseViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 				C6BD5C06294177F70031F32B /* ShowFraseViewController.swift in Sources */,
 				C63773F4293EA5B200F3B532 /* LoginViewController.swift in Sources */,
 				C63773E3293E9ED300F3B532 /* ViewController.swift in Sources */,
+				C68A8F0C2942C88700B420A4 /* CreateFraseViewController.swift in Sources */,
 				C6BD5BFE294110030031F32B /* CellFrasesTableViewCell.swift in Sources */,
 				C63773F8293EACC800F3B532 /* RegisterViewController.swift in Sources */,
 				C6BD5BF1293FCC090031F32B /* ValidationUtils.swift in Sources */,
