@@ -23,7 +23,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="3qV-Gz-WGn">
-                                <rect key="frame" x="40" y="166.33333333333334" width="334" height="430.33333333333326"/>
+                                <rect key="frame" x="40" y="166.33333333333334" width="334" height="428.66666666666663"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CWo-6k-Uim">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="19.333333333333332"/>
@@ -68,10 +68,10 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OwU-lP-XfL">
-                                        <rect key="frame" x="0.0" y="267.33333333333337" width="334" height="18.666666666666686"/>
+                                        <rect key="frame" x="0.0" y="267.33333333333337" width="334" height="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                 <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -79,14 +79,14 @@
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yaV-5z-CLQ">
-                                        <rect key="frame" x="0.0" y="304" width="334" height="2"/>
+                                        <rect key="frame" x="0.0" y="302.33333333333337" width="334" height="2"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="2" id="mYJ-Hv-4Q6"/>
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rDa-Bm-QAC">
-                                        <rect key="frame" x="0.0" y="324" width="334" height="55"/>
+                                        <rect key="frame" x="0.0" y="322.33333333333337" width="334" height="55"/>
                                         <color key="backgroundColor" red="0.84743404739999995" green="0.70434923400000005" blue="0.2481662184" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="55" id="sLG-a8-dkA"/>
@@ -101,7 +101,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JY3-VO-qca">
-                                        <rect key="frame" x="0.0" y="397" width="334" height="33.333333333333314"/>
+                                        <rect key="frame" x="0.0" y="395.33333333333326" width="334" height="33.333333333333314"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Forgot your password?">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
@@ -266,7 +266,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="AIc-nQ-Wbs">
-                                <rect key="frame" x="40" y="146.33333333333337" width="334" height="390"/>
+                                <rect key="frame" x="40" y="146.33333333333334" width="334" height="386.66666666666663"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZI-1m-i2e">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="19.333333333333332"/>
@@ -350,10 +350,10 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="520-2x-X7Z">
-                                        <rect key="frame" x="0.0" y="259.33333333333337" width="334" height="18.666666666666686"/>
+                                        <rect key="frame" x="0.0" y="259.33333333333337" width="334" height="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                 <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -361,20 +361,20 @@
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jcZ-st-oMg">
-                                        <rect key="frame" x="0.0" y="288" width="334" height="2"/>
+                                        <rect key="frame" x="0.0" y="286.33333333333337" width="334" height="2"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="2" id="A0F-Da-uNI"/>
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Repeat Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8lK-Rb-hLz">
-                                        <rect key="frame" x="0.0" y="300" width="334" height="19.333333333333314"/>
+                                        <rect key="frame" x="0.0" y="298.33333333333337" width="334" height="19.333333333333314"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pCe-qX-Pv5">
-                                        <rect key="frame" x="0.0" y="329.33333333333337" width="334" height="20"/>
+                                        <rect key="frame" x="0.0" y="327.66666666666663" width="334" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="VwC-ak-EER"/>
                                         </constraints>
@@ -383,10 +383,10 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0OB-q6-Qw1">
-                                        <rect key="frame" x="0.0" y="359.33333333333337" width="334" height="18.666666666666686"/>
+                                        <rect key="frame" x="0.0" y="357.66666666666663" width="334" height="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                 <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -394,7 +394,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DNh-yU-y6p">
-                                        <rect key="frame" x="0.0" y="388" width="334" height="2"/>
+                                        <rect key="frame" x="0.0" y="384.66666666666663" width="334" height="2"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="2" id="LvQ-Jr-MRl"/>
